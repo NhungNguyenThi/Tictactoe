@@ -5,13 +5,43 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-	<div class="container">
-			<h1>Tic Tac Toe Game</h1>
-		<div class="row">
-			<div class="col-xl-6 col-sm-3"></div>
-			<div class="col-xl-6 col-sm-3"></div>
-			<div class="col-xl-6 col-sm-3"></div>
+	
+	<h1>Tic Tac Toe Game</h1>
+		<form>
+			<input type="button" value="Choose X or O" onclick="getValue();" />
+		</form>
+		<div class="score">
+			<h2>Score</h2>
+			<p class="people" id='player'>You:</p>
+			<p class="people" id='computer'>Computer:</p>	
 		</div>
-	</div>
-</body>
+		
+		<table border="5" cellpadding="50px" cellspacing="30px" align="center" width="10%">
+			<div class="move">
+				<tr>
+					<td id="otn" onclick="otn()"></td>
+					<td id="oth" onclick="oth()"></td>
+					<td id="otb" onclick="otb()"></td>
+				</tr>
+				<tr>
+					<td id="ott" onclick="ott()"></td>
+					<td id="otna" onclick="otna()"></td>
+					<td id="ots" onclick="ots()"></td>
+				</tr>
+				<tr>
+					<td id="otba" onclick="otba()"></td>
+					<td id="otta" onclick="otta()"></td>
+					<td id="otc" onclick="otc()"></td>
+				</tr>
+			</div>
+		</table>
+		<button id="start">Start</button>
+		<button id="reset">Reset</button>
+
+		<div class="Table" id="formattb">
+			<p id="movefm">table</p>
+		</div>
+
+		<script src="script.js"></script>
+</body>	
 </html>

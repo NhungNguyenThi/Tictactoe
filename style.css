@@ -1,5 +1,5 @@
 h1{
-	color: red;
+	color: #CD1076;
 	font-size: 50px;
 	text-align: : center;
 }
@@ -8,6 +8,22 @@ body{
 	background-color: lavender;
 	text-align: center;
 }
-.row{
-	background-color: yellow ;
+button{
+  color: white;
+  background-color: #D2691E;
+  border:5;
+  font-size: 25px;
+  margin: 10px 70px;
+}
+button:hover{
+  cursor: pointer;
+  color: red;
+  background-color: #BFEFFF; 
+}
+.people{
+	display: inline-block;
+	margin:5px 50px;
+}
+.move{
+	color: blue;
 }
