@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Build a Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="style5.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<h1 style="color: red;">Tic Tac Toe Game</h1>
+	<div class="row">
+		<div class="choose">
+			<button id="choice" class="btn btn-primary" onclick="chooseXO();">Choose "X" or "O"</button>
+		</div>
+	</div>
+
+	<div class="format">
+			<div class="your">
+				<h3 id="yourResults">You: <span id="number">0</span></h3></div>
+			<div class="computer">
+				<h3 id="computerResults">Computer: <span id="number">0</span></h3></div>
+	</div>
+	<table class="fmtb">
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+	<div class="row">
+		<div class="start">
+			<button id="start" class="btn-primary" onclick="whoStart();">START</button>
+		</div>
+	</div>
+  <script src="script5.js"></script>
+</body>
+</html>
